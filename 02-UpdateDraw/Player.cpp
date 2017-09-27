@@ -42,3 +42,21 @@ void Player2::draw2() {
 void Circle::draw() {
 	sfw::drawCircle(300, 400, 50);
 }
+
+void Line::draw() {
+	sfw::drawLine(startX, starty, endx, endy);
+}
+
+void Box::draw() {
+	//bottom
+	sfw::drawLine(bottomLeftX, bottomLeftY, topRightX, bottomLeftY);
+
+	//left
+	sfw::drawLine(bottomLeftX, bottomLeftY, bottomLeftX, topRightY);
+
+	//top
+	sfw::drawLine(bottomLeftX, topRightY, topRightX, topRightY);
+
+	//right
+	sfw::drawLine(topRightX, topRightY, topRightX, bottomLeftY);
+}

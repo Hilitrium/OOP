@@ -24,6 +24,13 @@ int main() {
 	circle.posX = 400;
 	circle.posY = 200;
 
+	Box rect;
+	rect.bottomLeftX = 100;
+	rect.bottomLeftY = 100;
+
+	rect.topRightX = 200;
+	rect.topRightY = 300;
+
 	// set up the game loop
 	while (sfw::stepContext()) {
 		// game code goes here
@@ -42,11 +49,34 @@ int main() {
 		if (me.y < 0) {
 			me.y = 600;
 		}
+		if (you.x > 800) {
+			you.x = 0;
+		}
+		if (you.x < 0) {
+			you.x = 800;
+		}
+		if (you.y > 600) {
+			you.y = 0;
+		}
+		if (you.y < 0) {
+			you.y = 600;
+		}
 
 		you.update2();
 		you.draw2();
 
 		circle.draw();
+
+		Line straight;
+		straight.startX = 400;
+		straight.starty = 600;
+
+		straight.endx = 100;
+		straight.endy = 200;
+
+		straight.draw();
+
+		rect.draw();
 	}
 
 	// clean up

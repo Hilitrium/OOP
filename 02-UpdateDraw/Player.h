@@ -39,3 +39,15 @@ public:
 
 	void draw();
 };
+
+class Box
+{
+public:
+	float bottomLeftX;
+	float bottomLeftY;
+
+	float topRightX;
+	float topRightY;
+
+	void draw();
+};
