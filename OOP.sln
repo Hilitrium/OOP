@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-Inheritance", "03-Inheri
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04-RuleOfThree", "04-RuleOfThree\04-RuleOfThree.vcxproj", "{412063DE-5AC1-4F38-B77C-D992952DDF5D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OPPAssessment", "OPPAssessment\OPPAssessment.vcxproj", "{2E657AA6-29D5-4431-8417-AFDF92B17A07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{412063DE-5AC1-4F38-B77C-D992952DDF5D}.Release|x64.Build.0 = Release|x64
 		{412063DE-5AC1-4F38-B77C-D992952DDF5D}.Release|x86.ActiveCfg = Release|Win32
 		{412063DE-5AC1-4F38-B77C-D992952DDF5D}.Release|x86.Build.0 = Release|Win32
+		{2E657AA6-29D5-4431-8417-AFDF92B17A07}.Debug|x64.ActiveCfg = Debug|x64
+		{2E657AA6-29D5-4431-8417-AFDF92B17A07}.Debug|x64.Build.0 = Debug|x64
+		{2E657AA6-29D5-4431-8417-AFDF92B17A07}.Debug|x86.ActiveCfg = Debug|Win32
+		{2E657AA6-29D5-4431-8417-AFDF92B17A07}.Debug|x86.Build.0 = Debug|Win32
+		{2E657AA6-29D5-4431-8417-AFDF92B17A07}.Release|x64.ActiveCfg = Release|x64
+		{2E657AA6-29D5-4431-8417-AFDF92B17A07}.Release|x64.Build.0 = Release|x64
+		{2E657AA6-29D5-4431-8417-AFDF92B17A07}.Release|x86.ActiveCfg = Release|Win32
+		{2E657AA6-29D5-4431-8417-AFDF92B17A07}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
