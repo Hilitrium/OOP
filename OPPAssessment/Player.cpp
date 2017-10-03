@@ -3,6 +3,8 @@
 #include<iostream>
 
 void Player::update() {
+	bool jetCharge = true;
+
 	if (sfw::getKey('W')) {
 		y += 10;
 	}
@@ -18,7 +20,6 @@ void Player::update() {
 	if (y < 35) {
 		y = 35;
 	}
-
 	if (x <= 25) {
 		x = 25;
 	}
@@ -26,17 +27,31 @@ void Player::update() {
 		x = 775;
 	}
 	if (sfw::getKey('W')) {
+		jetCharge = false;
 		if (jet > 100) {
 			jet = 100;
 		}
-		jet -= 2.0f;
+		if (jet < 2) {
+			jet = 2;
+		}
+		jet -= 2.f;
 		//system("cls");
 		std::cout << jet << std::endl;
 	}
 	else {
+		jetCharge = true;
+		std::cout << jet << std::endl;
 		jet + 10;
 	}
-
+	if (jetCharge == true) {
+		jet += 0.5f;
+		if (jet > 100) {
+			jet = 100;
+		}
+	}
+	if (jet <= 0) {
+		y -= 10;
+	}
 	// platform detection
 	// platform 1
 	if (y >= 100 && y <= 105 && x >= 350 && x <= 450) {
