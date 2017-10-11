@@ -28,6 +28,6 @@ float lerp(float s, float e, float t) {
 	return s + t * (e - s);
 }
 
-float distance(float p1, float p2) {
+//float distance(float p1, float p2) {
 	//(((p2 - p1) * (p2 - p1)) + ((p2 - p1)))
-}
+//}
