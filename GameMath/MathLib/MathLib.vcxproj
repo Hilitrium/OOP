@@ -111,12 +111,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="change.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mat3.cpp" />
     <ClCompile Include="vec2.cpp" />
     <ClCompile Include="vec3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="change.h" />
     <ClInclude Include="mat3.h" />
     <ClInclude Include="mathutils.h" />
     <ClInclude Include="vec2.h" />

@@ -13,6 +13,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathLib", "MathLib\MathLib.vcxproj", "{655D0BCF-4775-47E8-977C-2DBD1AE311D7}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "X-TestGame", "X-TestGame\X-TestGame.vcxproj", "{050336D7-4B91-4A63-AD03-59B4A6372FAA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{655D0BCF-4775-47E8-977C-2DBD1AE311D7} = {655D0BCF-4775-47E8-977C-2DBD1AE311D7}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
