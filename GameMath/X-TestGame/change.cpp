@@ -1,14 +1,25 @@
-/*#include"change.h"
+#include"change.h"
+#include"vec3.h"
 #include"sfwdraw.h"
 
 Transform::Transform() {
 	position = vec2{ 0,0 };
 	dimension = vec2{ 0,0 };
 	angle = 0;
+	e_parent = nullptr;
 }
 
 mat3::Transform::getLocalTransform() const {
 	return scale(dimension) * rotate(angle) * translate(position);
+}
+
+mat3::Transform::getGlobalTransform() const {
+	if (e_parent != nullptr) {
+		return e_parent->getGlobalTransform() * getLocalTransform;
+	}
+	else {
+		return getLocalTransform();
+	}
 }
 
 void DrawMatrix(const mat3 &t, float drawing_scale) {
@@ -20,4 +31,4 @@ void DrawMatrix(const mat3 &t, float drawing_scale) {
 	sfw::drawLine(pos.x, pos.y, up_ep.x, up_ep.y, GREEN);
 
 	sfw::drawCircle(pos.x, pos.y, drawing_scale / 4);
-}*/
+}

@@ -95,3 +95,17 @@ vec3 cross(const vec3 &a, const vec3 &b) {
 				 a.z*b.x - a.x*b.z,
 				 a.x*b.y - a.y*b.x };
 }
+
+float & vec3::operator[](unsigned idx)
+{
+	return v[1];
+	return v[2];
+	return v[3];
+}
+
+float vec3::operator[](unsigned idx) const
+{
+	return v[1];
+	return v[2];
+	return v[3];
+}
