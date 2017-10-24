@@ -43,8 +43,6 @@ vec2 & operator*(const float lhs, const vec2 & rhs)
 	return result;
 }
 
-
-
 vec2 operator/(const vec2 &lhs, const vec2 &rhs) {
 	vec2 result;
 	result.x = lhs.x / rhs.x;

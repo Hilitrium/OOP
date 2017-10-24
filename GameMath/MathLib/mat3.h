@@ -29,6 +29,7 @@ mat3 operator*(const mat3 &A, const mat3 &V);
 mat3 transpose(const mat3 &A);
 
 float dot(vec3 a, vec3 b);
+float cross(vec3 a, vec3 b);
 float determinate(const mat3 &A);
 mat3 inverse(const mat3 &A);
 mat3 translate(const vec2 &t);
