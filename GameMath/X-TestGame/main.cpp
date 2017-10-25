@@ -1,25 +1,34 @@
-#include "change.h"
+
 #include "sfwdraw.h"
+#include "Transform.h"
+int main() 
+{
+	sfw::initContext(800,800);
 
-int main() {
-	Transform::Transform() {
-		position = vec2{ 0,0 };
-		dimension = vec2{ 0,0 };
-		angle = 0;
+	Transform myTrans;
+	myTrans.position = vec2{ 400,300 };
+	myTrans.dimension = vec2{ 1,1 };
+	myTrans.angle = 0;
+	
+
+	while (sfw::stepContext())
+	{
+		myTrans.angle += sfw::getDeltaTime() * 20;
+		DrawMatrix(myTrans.getGlobalTransform(), 30);
 	}
 
-	mat3::Transform::getLocalTransform() const {
-		return scale(dimension) * rotate(angle) * translate(position);
-	}
-
-	void DrawMatrix(const mat3 &t, float drawing_scale) {
-		vec2 pos = t[2].xy;
-		vec2 right_ep = pos + t[0].xy * drawing_scale;
-		vec2 up_ep = pos + t[1].xy * drawing_scale;
-
-		sfw::drawLine(pos.x, pos.y, right_ep.x, right_ep.y, RED);
-		sfw::drawLine(pos.x, pos.y, up_ep.x, up_ep.y, GREEN);
-
-		sfw::drawCircle(pos.x, pos.y, drawing_scale / 4);
-	}
+	sfw::termContext();
 }
+
+//#include "sfwdraw.h"
+//#include "Transform.h"
+//#include "myGuy.h"
+//#include "mat3.h"
+//#include <cmath>
+//
+//int main() {
+//	sfw::initContext();
+//
+//	myGuy me(3, 5, vec2{ 300, 400 }, vec2{ 256,256 }, 0);
+//
+//}

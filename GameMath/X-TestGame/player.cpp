@@ -1,7 +1,8 @@
-#include "Player.h"
-
-int main{
-	sfw::initContext
-
-
-}
+//#include "Player.h"
+//#include "sfwdraw.h"
+//
+//int main{
+//	//sfw::initContext
+//
+//
+//}

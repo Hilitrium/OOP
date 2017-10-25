@@ -30,6 +30,9 @@
     <ClCompile Include="change.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="mathutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mathutils.h">

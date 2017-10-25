@@ -26,3 +26,5 @@ vec3 operator-(const vec3 &lhs, const vec3 &rhs);
 vec3 operator*(const vec3 &lhs, const float rhs);
 vec3 operator*(const float lhs, const vec3 &rhs);
 vec3 operator/(const vec3 &lhs, const vec3 &rhs);
+vec3 cross(const vec3 &a, const vec3 &b);
+float dot(const vec3 &lhs, const vec3 &rhs);

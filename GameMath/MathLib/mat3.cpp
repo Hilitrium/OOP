@@ -50,6 +50,7 @@ mat3 operator*(const mat3 &A, const mat3 &B) {
 	for (int y = 0; y < 3; y++)
 		for (int x = 0; x < 3; ++x)
 			retval[y][x] = dot(At[x], B[y]);
+	return retval;
 }
 
 float determinant(const mat3 &A) {
